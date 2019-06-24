@@ -13,7 +13,7 @@
         <!--ViewFinder-->
         <scene sceneID="H2y-1G-PeN">
             <objects>
-                <tableViewController id="3NH-GI-7OG" sceneMemberID="viewController">
+                <tableViewController id="3NH-GI-7OG" customClass="PhotoTableViewController" customModule="pics" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="j37-gr-32q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -78,6 +78,9 @@
                                 <rect key="frame" x="142" y="353" width="130" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="SAVE THIS PHOTO"/>
+                                <connections>
+                                    <action selector="saveThis:" destination="xpd-1d-h9F" eventType="touchUpInside" id="g3y-2H-hlQ"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I0z-bk-xII">
                                 <rect key="frame" x="120" y="274" width="174" height="30"/>
@@ -85,6 +88,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textBox:" destination="xpd-1d-h9F" eventType="editingDidEnd" id="1gr-HO-Jj9"/>
+                                </connections>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="Jv3-A1-Bfv">
                                 <rect key="frame" x="87" y="123" width="240" height="143"/>
@@ -97,6 +103,7 @@
                     <navigationItem key="navigationItem" title="Add New Photo" id="lHR-ly-5SH"/>
                     <connections>
                         <outlet property="imageView" destination="Jv3-A1-Bfv" id="VUE-re-AKt"/>
+                        <outlet property="textBox" destination="I0z-bk-xII" id="zCe-8F-xcg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g57-2T-Lnq" userLabel="First Responder" sceneMemberID="firstResponder"/>

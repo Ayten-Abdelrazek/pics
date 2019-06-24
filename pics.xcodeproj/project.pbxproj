@@ -15,6 +15,7 @@
 		18E71E8D22C13FF200F53E44 /* picsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E71E8C22C13FF200F53E44 /* picsTests.swift */; };
 		18E71E9822C13FF200F53E44 /* picsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E71E9722C13FF200F53E44 /* picsUITests.swift */; };
 		18E71EA622C14BF800F53E44 /* AddPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E71EA522C14BF800F53E44 /* AddPhotosViewController.swift */; };
+		18E71EA822C164D300F53E44 /* PhotoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E71EA722C164D300F53E44 /* PhotoTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		18E71E9722C13FF200F53E44 /* picsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = picsUITests.swift; sourceTree = "<group>"; };
 		18E71E9922C13FF200F53E44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18E71EA522C14BF800F53E44 /* AddPhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotosViewController.swift; sourceTree = "<group>"; };
+		18E71EA722C164D300F53E44 /* PhotoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				18E71E7422C13FF000F53E44 /* AppDelegate.swift */,
 				18E71E7822C13FF000F53E44 /* Main.storyboard */,
 				18E71EA522C14BF800F53E44 /* AddPhotosViewController.swift */,
+				18E71EA722C164D300F53E44 /* PhotoTableViewController.swift */,
 				18E71E7E22C13FF200F53E44 /* Assets.xcassets */,
 				18E71E8022C13FF200F53E44 /* LaunchScreen.storyboard */,
 				18E71E8322C13FF200F53E44 /* Info.plist */,
@@ -261,6 +264,7 @@
 			files = (
 				18E71EA622C14BF800F53E44 /* AddPhotosViewController.swift in Sources */,
 				18E71E7522C13FF000F53E44 /* AppDelegate.swift in Sources */,
+				18E71EA822C164D300F53E44 /* PhotoTableViewController.swift in Sources */,
 				18E71E7D22C13FF000F53E44 /* pics.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

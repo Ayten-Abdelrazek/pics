@@ -23,7 +23,12 @@ class AddPhotosViewController: UIViewController,
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func saveThis(_ sender: Any){
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+    }
+    }
+    @IBOutlet weak var textBox: UITextField!
+    
     @IBAction func cameraTapped(_ sender: Any) {
         imagePicker.sourceType = .camera
         present(imagePicker, animated: true, completion: nil)
