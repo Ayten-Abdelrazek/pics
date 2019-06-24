@@ -53,7 +53,7 @@
         <!--Add New Photo-->
         <scene sceneID="sRF-UV-7IU">
             <objects>
-                <viewController id="xpd-1d-h9F" sceneMemberID="viewController">
+                <viewController id="xpd-1d-h9F" customClass="AddPhotosViewController" customModule="pics" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="44q-sp-yql">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -62,11 +62,17 @@
                                 <rect key="frame" x="42" y="406" width="66" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="CAMERA "/>
+                                <connections>
+                                    <action selector="cameraTapped:" destination="xpd-1d-h9F" eventType="touchUpInside" id="mzA-7l-a2L"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZu-Fe-HFk">
                                 <rect key="frame" x="305" y="406" width="61" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="ALBUMS"/>
+                                <connections>
+                                    <action selector="albumTapped:" destination="xpd-1d-h9F" eventType="touchUpInside" id="nTc-up-bVj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxx-yJ-c8y">
                                 <rect key="frame" x="142" y="353" width="130" height="30"/>
@@ -81,7 +87,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="Jv3-A1-Bfv">
-                                <rect key="frame" x="87" y="137" width="240" height="143"/>
+                                <rect key="frame" x="87" y="123" width="240" height="143"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -89,6 +95,9 @@
                         <viewLayoutGuide key="safeArea" id="RUm-Cc-hqM"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add New Photo" id="lHR-ly-5SH"/>
+                    <connections>
+                        <outlet property="imageView" destination="Jv3-A1-Bfv" id="VUE-re-AKt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g57-2T-Lnq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
