@@ -88,9 +88,6 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="textBox:" destination="xpd-1d-h9F" eventType="editingDidEnd" id="1gr-HO-Jj9"/>
-                                </connections>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="Jv3-A1-Bfv">
                                 <rect key="frame" x="87" y="123" width="240" height="143"/>
